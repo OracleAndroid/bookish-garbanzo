@@ -3,7 +3,6 @@ from pynput import keyboard
 from pynput.keyboard import Key, Listener  
 import logging
 
-#XML 
 
 COMBINATION = {keyboard.Key.ctrl_l, keyboard.KeyCode(char = 'b')}
 current = set()
