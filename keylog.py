@@ -2,13 +2,22 @@ import pynput
 from pynput import keyboard
 from pynput.keyboard import Key, Listener  
 import logging
+import os.path
+
+#Debugging code 
+debugPath = "debug"
+try:
+        os.mkdir(debugPath)
+except Exception:
+        pass
+
+logging.basicConfig(filename=(debugPath + "log.txt"), level=logging.DEBUG, format= '%(message)s')
 
 
+#Key stroke listening code. 
 COMBINATION = {keyboard.Key.ctrl_l, keyboard.KeyCode(char = 'b')}
 current = set()
 
-log_dir = ""
-logging.basicConfig(filename=(log_dir + "log.txt"), level=logging.DEBUG, format= '%(message)s')
 
 def on_press(key):        
     logging.info(str(key))
