@@ -1,0 +1,13 @@
+{
+  "SETTINGS": {
+    "debug": true,
+    "debugFilename": "hk_log.txt",
+    "debugFileLocation": "debug"
+  },
+  "HOTKEYS": {
+    "b": "I've got two guns, that should be enough for all of you.",
+    "d": "Damn, those alien bastards are gonna pay for shooting up my ride!",
+    "s": "You half the man you used to be!",
+    "i": "So much for the express elevator to hell"
+  }
+}
